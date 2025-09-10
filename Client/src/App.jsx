@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import LoginPage from "./Pages/LoginPage";
 import SearchPage from "./Pages/SearchPage";
-import UploadPage from "./Pages/UploadPAge";
+import UploadPage from "./Pages/UploadPage";
 import DocumentPage from "./Pages/DocumentPage";
 import InboxPage from "./Pages/InboxPage";
 import AdminUploadDashboard from "./Pages/AdminUploadDashboard";
@@ -14,7 +14,7 @@ export default function App() {
   return (
     <Router>
       <div className="min-h-screen bg-base-100">
-        {/* Navbar on all pages */}
+
         <Navbar />
 
         <div className="p-4">
