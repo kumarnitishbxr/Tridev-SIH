@@ -3,6 +3,7 @@
 import { useParams } from "react-router-dom";
 
 export default function DocumentPage() {
+  
   const { id } = useParams();
 
   // Mock doc (replace with API call)

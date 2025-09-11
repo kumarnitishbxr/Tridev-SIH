@@ -1,12 +1,6 @@
 
 
 
-
-
-
-
-
-
 export default function DocumentCard({ doc }) {
   return (
     <div className="card bg-base-100 shadow-md hover:shadow-lg transition">
