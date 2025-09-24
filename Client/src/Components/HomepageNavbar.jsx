@@ -50,7 +50,7 @@ const HomepageNavbar = () => {
                   isScrolled ? "" : "text-black"
                 }`}
               >
-                KMRL
+                SuchanaSetu
               </h1>
               <p
                 className={`text-sm font-medium ${

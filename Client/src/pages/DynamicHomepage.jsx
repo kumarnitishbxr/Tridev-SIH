@@ -20,6 +20,7 @@ import {
   MapPin,
   Phone,
 } from 'lucide-react';
+import AdminDashboard from './AdminDashboard';
 
 const DynamicHomepage = () => {
   // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -141,13 +142,15 @@ const DynamicHomepage = () => {
                   {slides[currentSlide].subtitle}. Transform your engineering workflows with our cutting-edge platform.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                  <button className="flex items-center justify-center space-x-3 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 group">
-                    <span>Get Started Free</span>
+                  <NavLink to='/admin'>
+                    <button className="flex items-center justify-center space-x-3 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 group">
+                    <span>Get Started</span>
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>
+                  </NavLink>
                   <button className="flex items-center justify-center space-x-3 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 group">
                     <Play className="w-5 h-5" />
-                    <span>Watch Demo</span>
+                    <span>Watch Demo Video</span>
                   </button>
                 </div>
                 
@@ -162,7 +165,7 @@ const DynamicHomepage = () => {
                     <div className="text-gray-300 text-sm">Uptime</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
+                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">99</div>
                     <div className="text-gray-300 text-sm">Companies</div>
                   </div>
                 </div>
@@ -197,7 +200,7 @@ const DynamicHomepage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Why Choose <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">DashBoard Pro?</span>
+              Why Choose <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">SuchanaSetu?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Powerful features designed for modern engineering teams to collaborate, innovate, and deliver exceptional results.
@@ -319,17 +322,19 @@ const DynamicHomepage = () => {
             Ready to Transform Your Engineering Process?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of engineering professionals who trust DashBoard Pro for their project management needs.
+            Join thousands of engineering professionals who trust SuchanaSetu for their project management needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="flex items-center justify-center space-x-3 bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 group">
-              <span>Start Free Trial</span>
+            <NavLink to='/staff'>
+              <button className="flex items-center justify-center space-x-3 bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 group">
+              <span>Start</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="flex items-center justify-center space-x-3 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+            </NavLink>
+            {/* <button className="flex items-center justify-center space-x-3 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
               <Phone className="w-5 h-5" />
               <span>Schedule Demo</span>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
@@ -344,7 +349,7 @@ const DynamicHomepage = () => {
                   <Building2 className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">DashBoard Pro</h3>
+                  <h3 className="text-xl font-bold">SuchanaSetu</h3>
                   <p className="text-gray-400 text-sm">Engineering Excellence</p>
                 </div>
               </div>
