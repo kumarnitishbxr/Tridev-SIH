@@ -1,2 +1,19 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@keyframes wave {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Animation classes for layers */
+.animate-waveSlow {
+  animation: wave 18s linear infinite;
+}
+
+.animate-waveMedium {
+  animation: waveFlow 6s ease-in-out infinite alternate;
+}
+
+.animate-waveFast {
+  animation: wave 8s linear infinite;
+}
+

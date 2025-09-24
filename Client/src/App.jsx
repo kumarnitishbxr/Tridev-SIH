@@ -1,36 +1,40 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Navbar from "./Components/Navbar";
-import LoginPage from "./Pages/LoginPage";
-import Home from "./Pages/Home";
-import DocumentPage from "./Pages/DocumentPage";
-import InboxPage from "./Pages/InboxPage";
-import Admin from './Pages/Admin'
-import AdminUploadDashboard from "./Components/AdminUploadDashboard";
-import AdminExecutiveDashboard from "./Components/AdminExecutiveDashboard";
-import UploadPage from "./Pages/UploadPage";
-// import SearchPage from "./Pages/Home";
+import { BrowserRouter , Routes, Route } from 'react-router-dom'
+// import Navbar from './Components/Navbar'
+// import Dashboard from './pages/DAshboard'
+import Header from './Components/Header'
+import DynamicHomepage from './pages/DynamicHomepage'
+import AdminDashboard from './pages/AdminDashboard'
+import MaintenanceDashboard from './pages/MaintenanceDashboard'
+import LoginPage from './pages/Loginpage'
+import StaffDashboard from './pages/StaffDashboard'
+import FinanceDashboard from './pages/FinanceDashboard'
+import UploadFile from './pages/UploadFile'
 
 
 
-export default function App() {
-  return (
-    <Router>
-      <div className="min-h-screen bg-base-100">
+import './App.css'
 
+function App() {
 
-        <div className="p-4">
-          <Routes>
-            <Route path="/" element={<Home /> } />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/upload" element={<UploadPage />} />
-            <Route path="/doc/:id" element={<DocumentPage />} />
-            <Route path="/inbox" element={<InboxPage />} />
-            <Route path="/admin" element={<Admin/> } />
-            <Route path="/admin/upload" element={<AdminUploadDashboard />} />
-            <Route path="/admin/executive" element={<AdminExecutiveDashboard />} />
-          </Routes>
-        </div>
-      </div>
-    </Router>
-  );
+  return(
+   <>
+    <BrowserRouter>
+    
+      <Routes>
+        <Route path='/login' element={<LoginPage/>} />
+        <Route path='/' element={<DynamicHomepage/>} />
+        <Route path='/admin' element={<AdminDashboard/>} />
+        <Route path='/maintain' element={<MaintenanceDashboard/>} />
+        <Route path='/staff' element={<StaffDashboard/>} />
+        <Route path='/finance' element={<FinanceDashboard/>} />
+        <Route path='/upload' element={<UploadFile/>} ></Route>
+      </Routes>
+
+    </BrowserRouter>
+   
+   </>
+  )
+  
 }
+
+export default App
