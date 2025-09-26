@@ -148,7 +148,15 @@ const DynamicHomepage = () => {
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>
                   </NavLink>
-                  <button className="flex items-center justify-center space-x-3 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 group">
+                  <button
+                  onClick={() =>
+                      window.open(
+                        "https://drive.google.com/file/d/1SR5gJqQlY0GjABhLegSzUJpAuuStkVAI/view?usp=drivesdk",
+                        "_blank"
+                      )
+                    }
+                  
+                  className="flex items-center justify-center space-x-3 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 group">
                     <Play className="w-5 h-5" />
                     <span>Watch Demo Video</span>
                   </button>
