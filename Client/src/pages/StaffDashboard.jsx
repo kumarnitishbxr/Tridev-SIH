@@ -19,7 +19,7 @@ const StaffDashboard = () => {
     'Engineering': [
       { id: 1, name: 'Technical Specifications Q3 2025', type: 'PDF', size: '2.3 MB', date: '2025-09-20', category: 'technical', restricted: false },
       { id: 2, name: 'Project Architecture Guidelines', type: 'DOC', size: '1.8 MB', date: '2025-09-18', category: 'guidelines', restricted: true },
-      // { id: 3, name: 'System Performance Reports', type: 'XLSX', size: '4.1 MB', date: '2025-09-15', category: 'reports', restricted: false },
+      { id: 3, name: 'Engineering Drawing', type: 'XLSX', size: '4.1 MB', date: '2025-09-15', category: 'reports', restricted: false },
       // { id: 4, name: 'Code Review Standards', type: 'PDF', size: '856 KB', date: '2025-09-12', category: 'standards', restricted: false },
       { id: 5, name: 'Infrastructure Deployment Guide', type: 'PDF', size: '3.2 MB', date: '2025-09-10', category: 'technical', restricted: true },
     ],
